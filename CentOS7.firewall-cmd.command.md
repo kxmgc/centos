@@ -1,12 +1,12 @@
-CentOS-7中firewall-cmd命令
+#CentOS-7中firewall-cmd命令
 在 CentOS 7
 暫時開放 ftp 服務
-# firewall-cmd --add-service=ftp
+`# firewall-cmd --add-service=ftp`
 
 永久開放 ftp 服務
-# firewall-cmd --add-service=ftp --permanent
+`# firewall-cmd --add-service=ftp --permanent`
 永久關閉
-# firewall-cmd --remove-service=ftp --permanent
+`# firewall-cmd --remove-service=ftp --permanent`
 success
 
 讓設定生效
