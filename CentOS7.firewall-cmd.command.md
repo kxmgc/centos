@@ -50,14 +50,16 @@ no
 no
 
 自行加入要開放的 Port
-# firewall-cmd --add-port=3128/tcp
-# firewall-cmd --list-all
-public (default)
-  interfaces:
-  sources:
-  services: dhcpv6-client ftp ssh
-  ports: 3128/tcp
-  masquerade: no
-  forward-ports:
-  icmp-blocks:
-  rich rules:
+```js
+    # firewall-cmd --add-port=3128/tcp
+    # firewall-cmd --list-all
+    public (default)
+      interfaces:
+      sources:
+      services: dhcpv6-client ftp ssh
+      ports: 3128/tcp
+      masquerade: no
+      forward-ports:
+      icmp-blocks:
+      rich rules:
+```
